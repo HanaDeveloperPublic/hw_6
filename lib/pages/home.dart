@@ -132,55 +132,43 @@ class Home extends StatelessWidget {
                           child: Padding(
                               padding: const EdgeInsets.all(0.0),
                               child: Stack(
-                                children: [
+                                children: const [
                                   Padding(
-                                    padding: const EdgeInsets.only(left: 50.0),
-                                    child: Container(
-                                      decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.all(Radius.circular(25)),
-                                        color: Colors.white,
-                                      ),
-                                      width: 33,
-                                      height: 33,
-                                      child: Image.asset(
-                                        "assets/images/face_2.jpeg",
-                                        width: 32,
-                                        height: 32,
-                                      ),
-                                    ),
-                                  ),
+                                      padding: EdgeInsets.only(left: 50.0),
+                                      child: CircleAvatar(
+                                        backgroundColor: Colors.black,
+                                        radius: 20,
+                                        child: CircleAvatar(
+                                          radius: 50,
+                                          backgroundImage: AssetImage(
+                                            "assets/images/face_1.jpeg",
+                                          ),
+                                        ),
+                                      )),
                                   Padding(
-                                    padding: const EdgeInsets.only(left: 30.0),
-                                    child: Container(
-                                      decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.all(Radius.circular(25)),
-                                        color: Colors.white,
-                                      ),
-                                      width: 33,
-                                      height: 33,
-                                      child: Image.asset(
-                                        "assets/images/face_2.jpeg",
-                                        width: 32,
-                                        height: 32,
-                                      ),
-                                    ),
-                                  ),
+                                      padding: EdgeInsets.only(left: 30.0),
+                                      child: CircleAvatar(
+                                        backgroundColor: Colors.black,
+                                        radius: 20,
+                                        child: CircleAvatar(
+                                          radius: 50,
+                                          backgroundImage: AssetImage(
+                                            "assets/images/face_2.jpeg",
+                                          ),
+                                        ),
+                                      )),
                                   Padding(
-                                    padding: const EdgeInsets.only(left: 15.0),
-                                    child: Container(
-                                      decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.all(Radius.circular(25)),
-                                        color: Colors.white,
-                                      ),
-                                      width: 33,
-                                      height: 33,
-                                      child: Image.asset(
-                                        "assets/images/face_2.jpeg",
-                                        width: 32,
-                                        height: 32,
-                                      ),
-                                    ),
-                                  ),
+                                      padding: EdgeInsets.only(left: 15.0),
+                                      child: CircleAvatar(
+                                        backgroundColor: Colors.black,
+                                        radius: 20,
+                                        child: CircleAvatar(
+                                          radius: 50,
+                                          backgroundImage: AssetImage(
+                                            "assets/images/face_3.jpeg",
+                                          ),
+                                        ),
+                                      )),
                                 ],
                               )),
                         )
